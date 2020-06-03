@@ -20,11 +20,16 @@
         </header>
         <article class="header__text">Please fulfil this form and send back to us. Throw that action you can participate
             in building this portal</article>
-        <form class="form" action="https://dev.cotenfrontend.pl" method="post" enctype="multipart/form-data">
+        <form class="form" action="http://dev.cotenfrontend.pl" method="post" >
             <p>
                 <label class="label" for="name">name:</label>
                 <input class="input" type="text" id="name" name="name" size="21" maxlength="20"
                     placeholder="John"></input>
+
+            </p>
+            <p>
+                <label class="label" for="riddle">riddle:</label>
+                <input class="input-wtf" type="text" id="riddle" name="riddle" value="cotenfrontend"></input>
 
             </p>
             <p>
@@ -116,13 +121,7 @@
         </form>
 
     </main>
-    <footer>
-        footer
-    </footer>
-    <script>
-        const hours = document.querySelector('.hours--js');
-        console.log(hours.value);
-    </script>
+    
 </body>
 
 </html>

@@ -83,6 +83,9 @@ margin:50px auto;
     color:black;
     text-transform:capitalize;
 }
+.input-wtf{
+    text-transform: none;
+}
 .textarea{
     width:100%;
     height:300px;
