@@ -1,15 +1,20 @@
 html{
     box-sizing:border-box;
-    background-color:darkslateblue;
-    color:white;
+    background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+    color:rgb(71, 109, 15);
+    text-shadow:0px 0px 10px white;
+    font-weight:bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
+   
 
 }
 *,*:before, *:after{
     box-sizing: inherit;
 }
 .main{
+    
     display:flex;
     align-items:center;
     width:50vw;
@@ -20,11 +25,13 @@ html{
     text-align:center;
 }
 .header__text{
+    font-size:2em;
 text-align:center;
 margin:50px auto;
 }
 
 .form{
+    color:inherit;
     display:flex;
     width:50vw;
     margin:auto;
@@ -33,6 +40,7 @@ margin:50px auto;
 }
 
 .label{
+    color:inherit;
     display:block;
     margin-bottom:20px;
     text-align:left;
@@ -42,34 +50,49 @@ margin:50px auto;
 .label-adress{
     display:block;
     margin-bottom:5px;
-    text-align:left;
     text-transform:uppercase;
+    
 }
 .fieldset{
+    text-align:center;
+    flex-flow:row-reverse nowrap;
+    align-items:center;
     border-color:orangered;
 }
 .legend{
     display:block;
     margin-bottom:20px;
-    
     text-align:left;
     font-size: 1.3em;
     text-decoration:underline double pink;
     text-transform:uppercase;
 }
-.imput{
-    background-color:darkgray;
+.input{
+    
+    background-color:rgb(243, 213, 44);
     color:black;
     text-transform:capitalize;
 }
-.imput-adress{
-    width:50vw;
-    background-color:darkgray;
+.input-email{
+    text-transform:none;
+}
+.input-adress{
+    display:inline-block;
+    margin-bottom:15px;
+    background-color:rgb(243, 213, 44);
     color:black;
     text-transform:capitalize;
 }
-.imput-number{
+.textarea{
+    width:100%;
+    height:300px;
+    margin:20px 0px;
+}
+.input-number{
     width:4em;
+}
+.input-radio{
+    margin:5px 0px;
 }
 .submit{
     display:inline-block;
