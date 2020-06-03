@@ -11,6 +11,8 @@ html{
 }
 .main{
     display:flex;
+    align-items:center;
+    width:50vw;
 }
 .header{
     display:block;
@@ -24,10 +26,52 @@ margin:50px auto;
 
 .form{
     display:flex;
+    width:50vw;
+    margin:auto;
     flex-flow:column nowrap;
-    align-items:center;
+    align-items:right;
 }
 
-.form__label{
+.label{
+    display:block;
+    margin-bottom:20px;
+    text-align:left;
+    text-transform:uppercase;
+}
+
+.label-adress{
+    display:block;
+    margin-bottom:5px;
+    text-align:left;
+    text-transform:uppercase;
+}
+.fieldset{
+    border-color:orangered;
+}
+.legend{
+    display:block;
+    margin-bottom:20px;
     
+    text-align:left;
+    font-size: 1.3em;
+    text-decoration:underline double pink;
+    text-transform:uppercase;
+}
+.imput{
+    background-color:darkgray;
+    color:black;
+    text-transform:capitalize;
+}
+.imput-adress{
+    width:50vw;
+    background-color:darkgray;
+    color:black;
+    text-transform:capitalize;
+}
+.imput-number{
+    width:4em;
+}
+.submit{
+    display:inline-block;
+    width:50px;
 }
