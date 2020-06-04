@@ -11,9 +11,6 @@
 
 <body>
 
-    <head>
-
-    </head>
     <main>
         <header>
             <h1 class="header">WTF form</h1>
@@ -22,38 +19,31 @@
         <form class="form" action="http://dev.cotenfrontend.pl" method="post">
             <p class="paragraph">
                 <label class="label" for="name">name:</label>
-                <input class="input" type="text" id="name" name="first-name" size="21" maxlength="20" placeholder="John"></input>
-
+                <input class="input" type="text" id="name" name="first-name" size="21" maxlength="20" placeholder="John" required></input>
             </p>
             <!--
                 <p class="paragraph">
                 <label class="label" for="riddle">riddle:</label>
                 <input class="input-wtf" type="text" id="riddle" name="riddle" value="cotenfrontend"></input>
-
-            </p>
-        -->
+                 </p>
+            -->
             <p class="paragraph">
                 <label class="label" for="lastname">lastname:</label>
-                <input class="input" type="text" id="lastname" name="last-name" size="31" maxlength="30" placeholder="Doe"></input>
+                <input class="input" type="text" id="lastname" name="last-name" size="31" maxlength="30" placeholder="Doe" required></input>
 
             </p>
             <p class="paragraph">
                 <label class="label" for="age">age: </label>
-                <input class="input input-number" type="number" name="age" id="age" size="4em" min="0" max="110"></input>
+                <input class="input input-age" type="number" name="age" id="age" size="4em" min="0" max="110"></input>
             </p>
-
-            <label class="label" for="email">email:</label>
-            <input class="input input-email" type="email" name="email" id="email"></input>
-
             <p class="paragraph">
+                <label class="label" for="email">email:</label>
+                <input class="input input-email" type="email" name="email" id="email" required></input>
             </p>
-
             <label class="label" for="phone">phone number:</label>
             <input class="input " type="tel" name="phone" id="phone"></input>
-
             <p class="paragraph">
             </p>
-
             <div class="paragraph paragraph-hours">
                 <label class="label label-hours" for="hours">hours that you want to spend for learning:</label>
                 <div class="number">0</div>
@@ -71,11 +61,11 @@
                     <lebel class="label-adress" for="city">city:</lebel>
                     <input class="input-adress" type="text" name="city" id="city"></input>
                 </fieldset>
-
             </p>
             <p class="paragraph">
                 <label class="label" for="knowledge">level of your knowledge:</label>
                 <select name="knowledge" id="knowledge">
+                    <option>-----</option>
                     <option>I just have known about frontend</option>
                     <option>I know what frontend </option>
                     <option>I tried a little in the past</option>
@@ -86,55 +76,43 @@
             </P>
             <p class="paragraph">
                 <label class="label" for="part">Favourite part of frontend:</label>
-                <p class="paragraph paragraph-radio">
+                <div class="paragraph paragraph-radio">
                     <label class="label">
                     <input class="input input-radio" type="radio" id="part" value="html" name="part" checked></input>
                     html</label>
-
-
                     <label class="label">
                     <input class="input input-radio" type="radio" id="part" value="css" name="part"></input>
                     css </label>
-
                     <label class="label">
                     <input class="input input-radio" type="radio" id="part" value="js" name="part"></input>
                     js</label>
-                </p>
+                </div>
             </p>
             <label class="label" for="story">show your story:
-
             </label>
             <textarea class="textarea" name="story" id="story">
-
             </textarea>
-
             <p class="paragraph">
                 <label class="label" for="password">what is your secret goal?</label>
                 <input class="input" type="password" id="password" name="password" placeholder="secret"></input>
-
             </p>
             <p class="paragraph">
                 <label class="label" for="file">attach file:</label>
                 <input class="input" type="file" id="file" name="file" value="upload" placeholder="secret"></input>
-
             </p>
             <p class="paragraph">
-                <input class="input" type="time" name="reset">
-            </p>
-            <p class="paragraph">
-                <input class="input" type="datetime-local" name="reset" value="clear">
+                <label class="label" for="datetime-local">Chose date</label>
+                <input class="input input-date" type="datetime-local" name="reset" value="clear">
             </p>
             <p class="paragraph paragraph-color">
                 <label class="label" for="color">pick your favourite color:</label>
-                <input class="input input-color" type="color" name="color" value="color">
+                <input class="input input-color" type="color" name="color" value="none">
             </p>
-            <p class="paragraph">
-                <input class="input" type="reset" name="reset" value="clear">
+            <p class="paragraph paragraph-bottom">
+                <input class="input input-clear" type="reset" name="reset" value="clear">
+                <input class="input-submit" type="submit" value="sent">
             </p>
 
-            <p class="paragraph">
-                <input class="submit" type="submit" value="sent">
-            </p>
         </form>
 
     </main>

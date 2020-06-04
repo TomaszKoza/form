@@ -1,6 +1,25 @@
+/*
+1 HTML
+2 BODY
+3 MAIN
+4 HEADER
+5 FORM
+6 LABEL
+7 INPUT
+8 PARAGRAPH
+9 OTHER
+
+*/
+
+
+/* 1 HTML*/
+
 html {
     box-sizing: border-box;
 }
+
+
+/* 2 BODY*/
 
 *,
 *:before,
@@ -19,14 +38,23 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+/*3 MAIN*/
+
 .main {
     display: flex;
     align-items: center;
     width: 50vw;
 }
 
+
+/*4 HEADER*/
+
 .header {
     display: block;
+    font-size: 7em;
+    color: greenyellow;
+    text-shadow: 0px 0px 7px rgb(2, 82, 2);
     text-decoration: underline orangered;
     text-align: center;
 }
@@ -38,6 +66,9 @@ body {
     margin: 50px auto;
 }
 
+
+/*5 FORM*/
+
 .form {
     display: flex;
     width: 50vw;
@@ -47,15 +78,18 @@ body {
     color: inherit;
 }
 
+
+/*6 LABEL*/
+
 .label {
-    display: block;
     margin-top: 30px;
     margin-bottom: 20px;
     color: white;
+    font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 25px rgb(0, 0, 0);
 }
 
 .label-adress {
@@ -65,8 +99,11 @@ body {
 }
 
 .label-hours {
-    display: block;
+    width: 100%;
 }
+
+
+/*7 INPUT*/
 
 .input {
     background-color: rgb(243, 213, 44);
@@ -76,6 +113,7 @@ body {
 
 .input-email {
     text-transform: none;
+    width: 100%;
 }
 
 .input-adress {
@@ -88,10 +126,6 @@ body {
 
 .input-wtf {
     text-transform: none;
-}
-
-.input-number {
-    width: 4em;
 }
 
 .input-radio {
@@ -109,7 +143,78 @@ body {
     height: 2em;
 }
 
+.input-submit,
+.input-clear {
+    width: 4em;
+    height: 3em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: black;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.input-clear {
+    background-color: yellow;
+}
+
+.input-submit {
+    background-color: red;
+}
+
+.input-submit:active,
+.input-clear:active {
+    border-style: inset;
+    border-width: 5px;
+    border-color: green;
+}
+
+.input-date {
+    width: 40%;
+    align-self: center;
+}
+
+.input-age {
+    align-self: center;
+    width: 4em;
+}
+
+
+/*8 PARAGRAPH*/
+
+.paragraph {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.paragraph-radio {
+    align-self: flex-start;
+    padding: 0px 10%;
+}
+
+.paragraph-color {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.paragraph-hours {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.paragraph-bottom {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+/*9 OTHER*/
+
 .fieldset {
+    margin: 50px 0px 30px 0px;
     text-align: center;
     flex-flow: row-reverse nowrap;
     align-items: center;
@@ -128,27 +233,6 @@ body {
 .number {
     color: blue;
     font-size: 1.5em;
-}
-
-.paragraph-radio {
-    align-self: flex-start;
-    padding: 0px 20%;
-}
-
-.paragraph-color {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.paragraph-hours {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.submit {
-    display: inline-block;
-    width: 50px;
 }
 
 .textarea {
