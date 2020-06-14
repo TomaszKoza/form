@@ -240,3 +240,15 @@ body {
     height: 300px;
     margin: 20px 0px;
 }
+
+.value{
+    margin:10px auto;
+    width:5em;
+    height:fit-content;
+    background-color:black;
+    color:white;
+    font-size:3em;
+    font-weight: bolder;
+    text-align:center;
+    text-shadow:none;
+}
